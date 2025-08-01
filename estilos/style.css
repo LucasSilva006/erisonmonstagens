@@ -8,6 +8,12 @@
     box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
+
 body {
     font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
@@ -132,6 +138,7 @@ header img {
 
 #servicos {
     text-align: center;
+    scroll-margin-top: 12vh;
 }
 
 .box-servicos {
@@ -158,6 +165,7 @@ header img {
     padding: 5px 15px 30px 15px;
     margin: 20px 0;
     font-size: 0.9em;
+    scroll-margin-top: 9vh;
 }
 
 #sobre h2 {
@@ -179,10 +187,11 @@ header img {
     padding: 0px;
     text-align: center;
     margin-bottom: 20px;
+    scroll-margin-top: 12vh;
 }
 
 #galeria h2 {
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 
 .slider-container {
@@ -197,19 +206,111 @@ header img {
 
 .slider-container::-webkit-scrollbar {
     display: none;
-    /* Esconde a barra de rolagem */
 }
 
 .slide {
     flex: 0 0 300px;
-    /* Ocupa 90% da largura da tela */
     height: 200px;
     scroll-snap-align: center;
     background-size: cover;
     background-position: center;
-    border-radius: 12px;
+    border-radius: 6px;
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.259);
-    margin-bottom: 20px;
+    margin: 20px;
+}
+
+#clientes-satisfeitos {
+    text-align: center;
+    margin: 0 20px;
+    scroll-margin-top: 11.5vh;
+}
+
+.service-box {
+    max-width: 75%;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    font-family: sans-serif;
+    margin: 20px auto;
+}
+
+.service-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.service-content {
+    padding: 16px;
+}
+
+.client-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #121212;
+}
+
+.client-comment {
+    font-size: 15px;
+    color: #202020;
+    line-height: 1.4;
+}
+
+footer {
+    background-color: #000000;
+    color: white;
+    padding: 15px;
+
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer li {
+    margin-top: 5px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+#tit-link-footer {
+    margin-top: 20px;
+}
+
+#footer-box-desenvolvidor-by {
+    margin-top: 18px;
+}
+
+#footer-box-desenvolvidor-by p{
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+#tit-footer-contatos {
+    margin-top: 28px;
+}
+
+#footer-box-contatos {
+    margin-bottom: 30px;
+}
+
+#footer-box-contatos p {
+    margin-top: 5px;
+}
+
+#p-copy {
+    text-align: center;
+    margin: 35px 0;
+    font-size: 0.8em;
 }
 
 
