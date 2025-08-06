@@ -13,7 +13,7 @@
 
     <header>
         <img src="imagens/eh-logo.png" alt="Logo EH">
-        <button class="menu-toggle" id="menu-toggle">☰</button>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">☰</button>
         <nav class="menu" id="menu">
             <a href="#servicos">Serviços</a>
             <a href="#sobre">Sobre</a>
@@ -22,77 +22,80 @@
         </nav>
     </header>
 
-    <section id="hero">
-        <h1>MONTAGEM E MANUTENÇÃO COM RAPIDEZ E QUALIDADE!</h1>
-        <p>Atendimento profissional em móveis e antenas, onde e quando você precisar.</p>
-        <a href="https://wa.me/5581982159539" target="_blank">Solicitar Orçamento<span>&rarr;</span></a>
-    </section>
-
-    <section id="servicos">
-        <h2 id="tit-servicos">Serviços</h2>
-        <div class="box-servicos">
-            <img src="imagens/imgs-servicos/img1.jpg" alt="Móveis montados" class="opc-serv" id="serv1">
-            <img src="imagens/imgs-servicos/img-antena1.jpg" alt="Antena montado" class="opc-serv" id="serv2">
-            <img src="imagens/imgs-servicos/img5.jpg" alt="Móveis desmontados" class="opc-serv" id="serv3">
-            <img src="imagens/imgs-servicos/img-antena2.jpg" alt="Móveis montados" class="opc-serv" id="serv4">
-            <img src="imagens/imgs-servicos/img7.jpg" alt="Móveis montados" class="opc-serv" id="serv5">
-            <img src="imagens/imgs-servicos/img-antena3.jpg" alt="Móveis montados" class="opc-serv" id="serv6">
-        </div>
-    </section>
-
-
-
-    <section id="sobre">
-        <h2>Sobre</h2>
-        <p>Com anos de experiência, ofereço serviços de montagem, instalação e conserto com agilidade, responsabilidade
-            e atenção aos detalhes. <br>Atendimento em toda Riacho das Almas-PE e região!</p>
-        <a href="https://wa.me/5581982159539" target="_blank">Solicitar Orçamento</a>
-    </section>
-
-    <section id="galeria">
-        <h2>Galeria <span>&rarr;</span></h2>
-        <div class="slider-container">
-            <div class="slide" style="background-image: url('imagens/img2.jpg');"></div>
-            <div class="slide" style="background-image: url('imagens/img3.jpg');"></div>
-            <div class="slide" style="background-image: url('imagens/img4.jpg');"></div>
-            <div class="slide" style="background-image: url('imagens/img9.jpg');"></div>
-            <div class="slide" style="background-image: url('imagens/img6.jpg');"></div>
-            <div class="slide" style="background-image: url('imagens/img10.jpg');"></div>
-            <div class="slide" style="background-image: url('imagens/img8.jpg');"></div>
-        </div>
-    </section>
-
-    <section id="clientes-satisfeitos">
-        <h2>Cliente Satisfeitos</h2>
-        <p>Veja o que meus clientes dizem</p>
-        <div class="service-box">
-            <img class="service-image" src="imagens/img3.jpg" alt="Foto do serviço">
-            <div class="service-content">
-                <div class="client-name">Cliente 1</div>
-                <div class="client-comment">
-                    O serviço ficou exatamente como eu queria. Atendimento excelente e montagem rápida!
+    <main>
+        <section id="hero">
+            <h1>MONTAGEM E MANUTENÇÃO COM RAPIDEZ E QUALIDADE!</h1>
+            <p>Atendimento profissional em móveis e antenas, onde e quando você precisar.</p>
+            <a href="https://wa.me/5581982159539" target="_blank">Solicitar Orçamento<span>&rarr;</span></a>
+        </section>
+        <section id="servicos">
+            <h2 id="tit-servicos">Serviços</h2>
+            <div class="box-servicos">
+                <img src="imagens/imgs-servicos/img1.jpg" alt="Montagem de móveis e antenas" class="opc-serv" id="serv1"
+                    loading="lazy">
+                <img src="imagens/imgs-servicos/img5.jpg" alt="Desmontagem de móveis e antenas" class="opc-serv"
+                    id="serv3" loading="lazy">
+                <img src="imagens/imgs-servicos/img7.jpg" alt="Móveis montados" class="opc-serv" id="serv5"
+                    loading="lazy">
+                <img src="imagens/imgs-servicos/img-antena3.jpg" alt="Móveis montados" class="opc-serv" id="serv6"
+                    loading="lazy">
+            </div>
+        </section>
+        <section id="sobre">
+            <h2>Sobre</h2>
+            <p>Com anos de experiência, ofereço serviços de montagem, instalação e conserto com agilidade,
+                responsabilidade
+                e atenção aos detalhes. <br>Atendimento em toda Riacho das Almas-PE e região!</p>
+            <a href="https://wa.me/5581982159539" target="_blank">Solicitar Orçamento</a>
+        </section>
+        <section id="galeria">
+            <h2>Galeria <span>&rarr;</span></h2>
+            <p id="p-galeria">Deslize para ver mais</p>
+            <div class="slider-container">
+                <div class="slide" style="background-image: url('imagens/img2.jpg');"></div>
+                <div class="slide" style="background-image: url('imagens/img3.jpg');"></div>
+                <div class="slide" style="background-image: url('imagens/img4.jpg');"></div>
+                <div class="slide" style="background-image: url('imagens/img9.jpg');"></div>
+                <div class="slide" style="background-image: url('imagens/img6.jpg');"></div>
+                <div class="slide" style="background-image: url('imagens/img10.jpg');"></div>
+                <div class="slide" style="background-image: url('imagens/img8.jpg');"></div>
+            </div>
+        </section>
+        <section id="clientes-satisfeitos">
+            <h2>Clientes Satisfeitos <span>&rarr;</span></h2>
+            <p>Veja o que meus clientes dizem</p>
+            <div class="slider-container-clientes">
+                <div class="service-box slide-cliente">
+                    <img class="service-image" src="imagens/img3.jpg" alt="Foto do Cliente 1" loading="lazy">
+                    <div class="service-content">
+                        <div class="client-name">Cliente 1</div>
+                        <div class="client-comment">
+                            O serviço ficou exatamente como eu queria. Atendimento excelente e montagem rápida!
+                        </div>
+                    </div>
+                </div>
+                <div class="service-box slide-cliente">
+                    <img class="service-image" src="imagens/img8.jpg" alt="Foto do Cliente 2" loading="lazy">
+                    <div class="service-content">
+                        <div class="client-name">Cliente 2</div>
+                        <div class="client-comment">
+                            O serviço ficou exatamente como eu queria. Atendimento excelente e montagem rápida!
+                        </div>
+                    </div>
+                </div>
+                <div class="service-box slide-cliente">
+                    <img class="service-image" src="imagens/img6.jpg" alt="Foto do Cliente 3" loading="lazy">
+                    <div class="service-content">
+                        <div class="client-name">Cliente 3</div>
+                        <div class="client-comment">
+                            O serviço ficou exatamente como eu queria. Atendimento excelente e montagem rápida!
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="service-box">
-            <img class="service-image" src="imagens/img8.jpg" alt="Foto do serviço">
-            <div class="service-content">
-                <div class="client-name">Cliente 1</div>
-                <div class="client-comment">
-                    O serviço ficou exatamente como eu queria. Atendimento excelente e montagem rápida!
-                </div>
-            </div>
-        </div>
-        <div class="service-box">
-            <img class="service-image" src="imagens/img6.jpg" alt="Foto do serviço">
-            <div class="service-content">
-                <div class="client-name">Cliente 1</div>
-                <div class="client-comment">
-                    O serviço ficou exatamente como eu queria. Atendimento excelente e montagem rápida!
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
+
 
     <footer id="rodape">
         <h3 id="tit-link-footer">Links</h3>
@@ -101,7 +104,7 @@
             <li><a href="#servicos">Serviços</a></li>
             <li><a href="#sobre">Sobre</a></li>
             <li><a href="#galeria">Galeria</a></li>
-            <li><a href="#clientes-satisfetos">Provas Reais</a></li>
+            <li><a href="#clientes-satisfeitos">Provas Reais</a></li>
         </ul>
 
         <div id="footer-box-contatos">
@@ -111,8 +114,9 @@
         </div>
 
         <div id="footer-box-desenvolvidor-by">
-            <h3 id="tit-footer-contatos">Desenvolvimento</h3>
-            <p>Desenvolvido por <a href="https://www.instagram.com/inove.inovacoes.digitais" target="_blank" class="link-inove">inove! - Soluções Digitais</a></p>
+            <h3 id="tit-footer-desenvolvimento">Desenvolvimento</h3>
+            <p>Desenvolvido por <a href="https://www.instagram.com/inove.inovacoes.digitais" target="_blank"
+                    class="link-inove">inove! - Soluções Digitais</a></p>
         </div>
 
         <p id="p-copy">&copy; 2025 Erison Montagens. Todos os direitos reservados.</p>

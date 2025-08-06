@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
@@ -9,10 +8,8 @@
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
-
-
 
 body {
     font-family: "Roboto", sans-serif;
@@ -87,7 +84,7 @@ header img {
 }
 
 #hero {
-    background-color: #f2f2f2;
+    background-color: #000000;
     text-align: start;
     background-image: url("../imagens/img-hero.jpg");
     background-position: center right;
@@ -202,6 +199,7 @@ header img {
     -webkit-overflow-scrolling: touch;
     gap: 16px;
     scroll-padding: 10px;
+    padding: 0 20px; /* Igual ao clientes */
 }
 
 .slider-container::-webkit-scrollbar {
@@ -216,7 +214,7 @@ header img {
     background-position: center;
     border-radius: 6px;
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.259);
-    margin: 20px;
+    margin: 20px 0; /* Só margem vertical */
 }
 
 #clientes-satisfeitos {
@@ -225,14 +223,31 @@ header img {
     scroll-margin-top: 11.5vh;
 }
 
+.slider-container-clientes {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    gap: 16px;
+    scroll-padding: 10px;
+    padding: 0 20px;
+}
+
+.slider-container-clientes::-webkit-scrollbar {
+    display: none;
+}
+
 .service-box {
-    max-width: 75%;
+    max-width: 300px;
+    flex: 0 0 300px;
+    scroll-snap-align: center;
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     background-color: #fff;
     font-family: sans-serif;
-    margin: 20px auto;
+    margin: 20px 0; /* Só margem vertical, igual ao slide */
 }
 
 .service-image {
@@ -262,7 +277,6 @@ footer {
     background-color: #000000;
     color: white;
     padding: 15px;
-
 }
 
 footer ul {
@@ -294,7 +308,7 @@ footer a:hover {
     margin-top: 18px;
 }
 
-#footer-box-desenvolvidor-by p{
+#footer-box-desenvolvidor-by p {
     font-weight: 400;
     margin: 10px 0;
 }
@@ -304,6 +318,10 @@ footer a:hover {
 }
 
 #tit-footer-contatos {
+    margin-top: 28px;
+}
+
+#tit-footer-desenvolvimento {
     margin-top: 28px;
 }
 
@@ -321,6 +339,11 @@ footer a:hover {
     font-size: 0.8em;
 }
 
+.subtitulo-clientes {
+    font-size: 1em;
+    color: #888;
+    margin-bottom: 15px;
+}
 
 @media (min-width: 768px) {
     .menu {
@@ -333,5 +356,9 @@ footer a:hover {
 
     .menu-toggle {
         display: none;
+    }
+
+    .box-servicos {
+        grid-template-columns: repeat(4, 1fr);
     }
 }
