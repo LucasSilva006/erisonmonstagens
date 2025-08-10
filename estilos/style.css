@@ -30,7 +30,7 @@ header {
 }
 
 header img {
-    width: 40px;
+    width: 200px;
 }
 
 .menu-toggle {
@@ -140,14 +140,19 @@ header img {
 
 .box-servicos {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 45% 45%;
     margin: 0 5%;
     column-gap: 10px;
     row-gap: 15px;
+    justify-content: center;
 }
 
 #tit-servicos {
-    margin: 20px auto;
+    margin: 20px auto 10px auto;
+}
+
+#explicacao-dos-botoes-de-servico {
+    margin-bottom: 18px;
 }
 
 #servicos img {
@@ -343,6 +348,34 @@ footer a:hover {
     font-size: 1em;
     color: #888;
     margin-bottom: 15px;
+}
+
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+
+.whatsapp-float img {
+    width: 35px;
+    height: 35px;
 }
 
 @media (min-width: 768px) {
